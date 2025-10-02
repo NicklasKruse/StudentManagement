@@ -2,7 +2,7 @@
 
 ## Change-Based Migrations
 
-### Initial Schema (V1)
-- Created Student, Course, Enrollment tables
-- Generated migration artifact: `Data/Migrations/V1__InitialSchema.sql`
-- Branch: `/initial-schema-ef`
+### Add MiddleName (V2)
+- Added MiddleName column to Student
+- Generated migration artifact: `Data/Migrations/V2__AddMiddleNameToStudent.sql`
+- Branch: `/add-middlename-ef`

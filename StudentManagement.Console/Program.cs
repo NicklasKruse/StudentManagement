@@ -4,8 +4,8 @@ Console.WriteLine("Hello, World!");
 
 #region Commands
 /*
-dotnet ef migrations add InitialSchema --project StudentManagement.Console --output-dir Data/Migrations 
+dotnet ef migrations add [Name] --project StudentManagement.Console --output-dir Data/Migrations
 
-dotnet ef migrations script -o Data/Migrations/V1__InitialSchema.sql --project StudentManagement.Console
+dotnet ef migrations script InitialSchema [NewSchemaName] -o Data/Migrations/[Vx__Name].sql
  */
 #endregion
