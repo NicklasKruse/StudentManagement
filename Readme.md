@@ -2,7 +2,7 @@
 
 ## Change-Based Migrations
 
-### Add DateOfBirth (V3)
-- Added DateOfBirth column to Student
-- Generated migration artifact: `Data/Migrations/V3__AddDateOfBirthToStudent.sql`
-- Branch: `/add-dateofbirth-ef`
+### Add Instructor (V4)
+- Added Instructor
+- Generated migration artifact: `Data/Migrations/V4__AddInstructor.sql`
+- Branch: `/add-instructor-ef`
