@@ -4,6 +4,7 @@
     [LastName] nvarchar(max) NOT NULL,
     [Email] nvarchar(max) NOT NULL,
     [MiddleName] nvarchar(max) NULL,
+    [DateOfBirth] datetime2 NOT NULL,
     [EnrollmentDate] datetime2 NOT NULL,
     CONSTRAINT [PK_Students] PRIMARY KEY ([Id])
 );
