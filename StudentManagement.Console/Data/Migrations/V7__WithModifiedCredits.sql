@@ -31,7 +31,7 @@ CREATE TABLE [Departments] (
 CREATE TABLE [Courses] (
     [Id] int NOT NULL IDENTITY,
     [Title] nvarchar(max) NOT NULL,
-    [Credits] int NOT NULL,
+    [Credits] decimal(5,2) NOT NULL,
     [InstructorId] int NOT NULL,
     CONSTRAINT [PK_Courses] PRIMARY KEY ([Id]),
     CONSTRAINT [FK_Courses_Instructors] FOREIGN KEY ([InstructorId]) REFERENCES [Instructors]([Id])
