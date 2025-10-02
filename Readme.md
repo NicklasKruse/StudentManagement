@@ -2,7 +2,7 @@
 
 ## Change-Based Migrations
 
-### Add MiddleName (V2)
-- Added MiddleName column to Student
-- Generated migration artifact: `Data/Migrations/V2__AddMiddleNameToStudent.sql`
-- Branch: `/add-middlename-ef`
+### Add DateOfBirth (V3)
+- Added DateOfBirth column to Student
+- Generated migration artifact: `Data/Migrations/V3__AddDateOfBirthToStudent.sql`
+- Branch: `/add-dateofbirth-ef`
