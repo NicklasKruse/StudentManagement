@@ -7,5 +7,6 @@
         public string LastName { get; set; }
         public string Email { get; set; }
         public DateTime EnrollmentDate { get; set; }
+        public string? MiddleName { get; set; }
     }
 }
