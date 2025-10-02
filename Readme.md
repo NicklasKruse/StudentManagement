@@ -2,7 +2,8 @@
 
 ## Change-Based Migrations
 
-### Add Instructor (V4)
-- Added Instructor
-- Generated migration artifact: `Data/Migrations/V4__AddInstructor.sql`
-- Branch: `/add-instructor-ef`
+### Rename Grade to FinalGrade in Enrollment (V5)
+- Renamed Grade to FinalGrade in Enrollment
+- This is a non-destructive change. EF uses `sp_rename` to rename the column, which preserves existing data.
+- Generated migration artifact: `Data/Migrations/V5__RenameGradeToFinalGradeInEnrollment.sql`
+- Branch: `/rename-grade-ef`
