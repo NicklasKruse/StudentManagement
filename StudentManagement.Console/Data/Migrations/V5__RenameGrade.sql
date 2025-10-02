@@ -31,7 +31,7 @@ CREATE TABLE [Enrollments] (
     [Id] int NOT NULL IDENTITY,
     [StudentId] int NOT NULL,
     [CourseId] int NOT NULL,
-    [Grade] nvarchar(max) NOT NULL,
+    [FinalGrade] nvarchar(max) NOT NULL,
     CONSTRAINT [PK_Enrollments] PRIMARY KEY ([Id]),
     CONSTRAINT [FK_Enrollments_Students] FOREIGN KEY ([StudentId]) REFERENCES [Students]([Id]),
     CONSTRAINT [FK_Enrollments_Courses] FOREIGN KEY ([CourseId]) REFERENCES [Courses]([Id])

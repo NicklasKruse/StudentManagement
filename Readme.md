@@ -2,7 +2,5 @@
 
 ## Change-Based Migrations
 
-### Initial Schema (V1)
-- Created Student, Course, Enrollment tables
-- Generated migration artifact: `Data/Migrations/V1__InitialSchema.sql`
-- Branch: `/initial-schema-ef`
+### Rename
+- Non-destructive in concept (just a name change in the desired state)
