@@ -12,7 +12,7 @@ using StudentManagement.Console.Data;
 namespace StudentManagement.Console.Data.Migrations
 {
     [DbContext(typeof(StudentManagementDbContext))]
-    [Migration("20251002161738_AddDateOfBirthToStudent")]
+    [Migration("20251002203055_AddDateOfBirthToStudent")]
     partial class AddDateOfBirthToStudent
     {
         /// <inheritdoc />
@@ -75,6 +75,9 @@ namespace StudentManagement.Console.Data.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("DateOfBirth")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
                         .IsRequired()
