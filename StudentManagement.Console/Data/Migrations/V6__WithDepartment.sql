@@ -18,6 +18,16 @@ CREATE TABLE [Instructors] (
     CONSTRAINT [PK_Instructors] PRIMARY KEY ([Id])
 );
 
+CREATE TABLE [Departments] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Budget] decimal(18,2) NOT NULL,
+    [StartDate] datetime2 NOT NULL,
+    [DepartmentHeadId] int NULL,
+    CONSTRAINT [PK_Departments] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Departments_Instructors] FOREIGN KEY ([DepartmentHeadId]) REFERENCES [Instructors]([Id])
+);
+
 CREATE TABLE [Courses] (
     [Id] int NOT NULL IDENTITY,
     [Title] nvarchar(max) NOT NULL,
