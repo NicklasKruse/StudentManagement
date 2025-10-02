@@ -3,6 +3,7 @@
     [FirstName] nvarchar(max) NOT NULL,
     [LastName] nvarchar(max) NOT NULL,
     [Email] nvarchar(max) NOT NULL,
+    [MiddleName] nvarchar(max) NULL,
     [EnrollmentDate] datetime2 NOT NULL,
     CONSTRAINT [PK_Students] PRIMARY KEY ([Id])
 );
